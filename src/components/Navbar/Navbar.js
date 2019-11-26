@@ -4,7 +4,6 @@ import { Link, NavLink } from 'react-router-dom';
 import Modal from './Modal/Modal'
 
 class Navbar  extends Component {
-
   render () {
     return (
       <header>
