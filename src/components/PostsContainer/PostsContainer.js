@@ -1,5 +1,4 @@
 import React from 'react';
-// import axios from 'axios';
 
 import Post from './Post/Post';
 import CreatePostForm from '../CitiesContainer/CityDetailContainer/CityDetail/CreatePostForm/CreatePostForm';
@@ -49,7 +48,6 @@ class PostsContainer extends React.Component {
     event.preventDefault();
     axios.delete(`${process.env.REACT_APP_API_URL}/posts/deletePost/${postId}`, { withCredentials: true })
     .then((res) => {
-      console.log(res)
       const filtered = this.state.posts.filter(post => {
         if(post._id !== res.data.data._id) {
           return post
@@ -79,7 +77,6 @@ class PostsContainer extends React.Component {
       })
     }
   }
-
 
   render() {
     return (

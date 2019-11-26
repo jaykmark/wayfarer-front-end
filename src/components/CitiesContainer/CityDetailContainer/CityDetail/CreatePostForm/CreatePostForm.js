@@ -23,7 +23,6 @@ class CreatePostForm extends React.Component {
   }
   
   render() {
-    console.log(this.props.cityDetails);
     return(
       <>
         <div className="col">

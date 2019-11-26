@@ -42,8 +42,8 @@ class CityDetailContainer extends React.Component {
   render() {
     return (
       <div className=" city-detail-container">
-      {this.state.cityDetails && <CityDetail cityDetails={this.state.cityDetails} /> }
-        {this.state.cityDetails && <PostsContainer posts={this.state.cityDetails.posts} cityDetails={this.state.cityDetails} currentUser={this.props.currentUser} /> }
+      {this.state.cityDetails && <CityDetail cityDetails={this.state.cityDetails} />}
+        {this.state.cityDetails && <PostsContainer posts={this.state.cityDetails.posts} cityDetails={this.state.cityDetails} currentUser={this.props.currentUser} />}
       </div>
     );
   }

@@ -53,19 +53,19 @@ class CitiesContainer extends React.Component {
         </div>
         {/* for sidebar */}
         <div className="container">
-        <div className="row">
-          <div className="col col-md-3">
-            <div className=" city-list p-5 row-md">
-              <ul>
-                {this.displayCities(this.state.citiesData)}
-              </ul>
+          <div className="row">
+            <div className="col col-md-3">
+              <div className=" city-list p-5 row-md">
+                <ul>
+                  {this.displayCities(this.state.citiesData)}
+                </ul>
+              </div>
+            </div>
+            <div className=" col-md-8 col">
+              <CityDetailContainer selectedCity={this.state.selectedCity} />
             </div>
           </div>
-          <div className=" col-md-8 col">
-            <CityDetailContainer selectedCity={this.state.selectedCity} />
-          </div>
         </div>
-      </div>
       </div>
     );
   }
