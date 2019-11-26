@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link, withRouter } from "react-router-dom";
 
 class confirmDelete extends React.Component {
   state = {

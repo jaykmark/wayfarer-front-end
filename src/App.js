@@ -37,9 +37,9 @@ class App extends Component {
   render () {
     return (
       <>
-       <video autoPlay={true} loop={true} className="myVideo">
+        <video autoPlay={true} loop={true} className="myVideo">
           <source src={video2} type="video/mp4" />
-       </video>
+        </video>
         <Navbar currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} logout={this.logout}/>
         <Routes currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} />
       </>
