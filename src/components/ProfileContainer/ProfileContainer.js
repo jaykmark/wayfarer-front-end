@@ -50,10 +50,6 @@ class ProfileContainer extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
-=======
-      <>
->>>>>>> submaster
         <div className="profile-container">
           {this.state.loaded && (
             <Profile
