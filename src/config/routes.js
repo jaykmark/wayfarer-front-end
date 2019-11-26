@@ -4,7 +4,6 @@ import Home from "../components/Home/Home";
 import Register from "../components/Navbar/Modal/Auth/Register";
 import Login from "../components/Navbar/Modal/Auth/Login";
 import ProfileContainer from "../components/ProfileContainer/ProfileContainer";
-// import UpdateProfile from "../components/Profile/EditProfile/UpdateProfile";
 import PostDetailContainer from '../components/PostDetailContainer/PostDetailContainer';
 import CitiesContainer from "../components/CitiesContainer/CitiesContainer";
 import CityDetailContainer from "../components/CitiesContainer/CityDetailContainer/CityDetailContainer";

@@ -26,7 +26,6 @@ class App extends Component {
     localStorage.removeItem('uid');
     axios.delete(`${process.env.REACT_APP_API_URL}/auth/logout`, { withCredentials: true })
       .then(res => {
-        console.log(res);
         this.setState({ currentUser: null });
         localStorage.removeItem('uid');
         this.props.history.push('/');
@@ -37,10 +36,10 @@ class App extends Component {
   render () {
     return (
       <>
-       <video autoPlay={true} loop={true} className="myVideo">
+      <video autoPlay={true} loop={true} className="myVideo">
           <source src={video2} type="video/mp4" />
-       </video>
-        <Navbar currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} logout={this.logout}/>
+      </video>
+        <Navbar currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} logout={this.logout} />
         <Routes currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} />
       </>
     );

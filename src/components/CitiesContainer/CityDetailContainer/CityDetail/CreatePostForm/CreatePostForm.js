@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 
 class CreatePostForm extends React.Component {
   state = {
@@ -15,27 +14,6 @@ class CreatePostForm extends React.Component {
     });
   };
 
-  // handleSubmit = event => {
-  //   event.preventDefault();
-  //   console.log(this.state);
-  //   axios
-  //     .post(`${process.env.REACT_APP_API_URL}/posts/newpost`, this.state, {
-  //       withCredentials: true
-  //     })
-  //     .then(res => {
-  //       console.log(res)
-  //       // document.getElementById(`createPostForm`).style.display = 'none';
-  //       // document.getElementsByClassName('modal-backdrop')[0].remove()
-  //     })
-  //     .catch(err => console.log(err));
-  // };
-
-  // componentDidMount() {
-  //     this.setState({
-  //       city: this.props.cityDetails._id
-  //     })
-  //   }
-
   componentDidUpdate = (prevProps) => {
     if (prevProps.cityDetails !== this.props.cityDetails) {
       this.setState({
@@ -45,7 +23,6 @@ class CreatePostForm extends React.Component {
   }
   
   render() {
-    console.log(this.props.cityDetails);
     return(
       <>
         <div className="col">

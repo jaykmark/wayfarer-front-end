@@ -13,12 +13,10 @@ class PostDetailContainer extends React.Component {
     const postId = document.location.href.split('/')[4];
     axios.get(`${process.env.REACT_APP_API_URL}/posts/${postId}`, { withCredentials: true })
       .then((res) => {
-        console.log(res.data.data);
         this.setState({
           postDetail: res.data.data,
           loaded: true,
         })
-        console.log(this.state.postDetail);
       })
       .catch((err) => console.log(err));
   };

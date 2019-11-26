@@ -1,7 +1,6 @@
 import React from "react";
 
 const PostDetail = props => {
-  console.log(props);
   return (
     <div className="post-detail container p-5">
       <h3 className="post-detail-title">{props.postDetail.title}</h3>

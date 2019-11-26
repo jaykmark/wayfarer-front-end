@@ -8,7 +8,6 @@ import ConfirmDelete from './ConfirmDelete/ConfirmDelete'
 import './Post.css'
 
 const Post = props => {
-  // console.log(props)
   let link = `posts/${props.postData._id}`;
   let postId = `${props.postData._id}`
   let postTitle = `${props.postData.title}`
@@ -43,7 +42,6 @@ const Post = props => {
       </button>
 }
 </div>
-{/* </div> */}
       {/* <!-- Edit Post Modal --> */}
       <div
         className="modal fade"
