@@ -56,8 +56,6 @@ class PostsContainer extends React.Component {
       this.setState({
         posts: [...filtered]
       })
-      // document.getElementsByClassName('modal-backdrop')[0].remove();
-      // document.getElementById(`deletePostModal${postId}`).setAttribute('data-dismiss','modal');
     })
     .catch((err) => console.log(err));
   }
@@ -78,7 +76,7 @@ class PostsContainer extends React.Component {
         posts: this.props.cityDetails.posts
       })
     }
-    }
+  }
 
   render() {
     return (

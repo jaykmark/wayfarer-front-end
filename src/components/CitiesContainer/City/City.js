@@ -2,7 +2,6 @@ import React from "react";
 
 class City extends React.Component {
   render() {
-    let link = `${this.props.cityData._id}`;
     const { cityData } = this.props;
     return (
       <>

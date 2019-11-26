@@ -9,13 +9,11 @@ import './Post.css'
 
 const Post = props => {
   let link = `posts/${props.postData._id}`;
-  let postId = `${props.postData._id}`
   let postTitle = `${props.postData.title}`
   return (
     
     <div className="post-container" id={props.postData._id} onClick={props.setSelectedPost}>
       <hr/>
-      {/* <div className="row"> */}
       <div className="col col-sm-6 col-md-8">
       <Link className="profile-posts-content" to={link}>
         {props.postData.title}

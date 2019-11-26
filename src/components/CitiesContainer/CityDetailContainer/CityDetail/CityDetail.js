@@ -1,10 +1,6 @@
 import React from "react";
 
-import CreatePostForm from './CreatePostForm/CreatePostForm';
-import PostsContainer from '../../../PostsContainer/PostsContainer';
-
 const CityDetail = props => {
-
   return (
     <div className="city-detail-box">
       <div className="col col-md-4">

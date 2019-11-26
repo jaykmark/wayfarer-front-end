@@ -4,7 +4,6 @@ import React from "react";
 import dogJumping from "./assets/dogJumping.mp4";
 import stretch from "./assets/stretch.mp4";
 import dogWalking from "./assets/dogWalking.mp4";
-// import videoSky from "./assets/videoSky.mp4";
 
 const Carousel = () => {
   return (
@@ -71,7 +70,6 @@ const Carousel = () => {
 
       {/* content */}
       <div className="home-container">
-        {/* <!-- Three columns of text below the carousel --> */}
         <h1 className="parks-around">Check Out Parks All Around The World!</h1>
         <div className="row">
           <div className="col-lg-4">
@@ -83,7 +81,6 @@ const Carousel = () => {
               Praesent commodo cursus magna.
             </p>
           </div>
-          {/* <!-- /.col-lg-4 --> */}
           <div className="col-lg-4">
             <h2>San Francisco</h2>
             <p>
@@ -93,7 +90,6 @@ const Carousel = () => {
               mauris condimentum nibh.
             </p>
           </div>
-          {/* <!-- /.col-lg-4 --> */}
           <div className="col-lg-4">
             <h2>Paris</h2>
             <p>
